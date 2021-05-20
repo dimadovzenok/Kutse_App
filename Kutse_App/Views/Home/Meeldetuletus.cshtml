@@ -1,0 +1,9 @@
+﻿@model Kutse_App.Models.Guest
+
+@{
+    ViewBag.Title = "Test";
+}
+<div>
+    @Html.ActionLink("Saada meeldetuletus", "Meeldetuletus", "Home", new { email = Model.Email }, new { @class = "btn btn-primary" })
+    @ViewBag.Message
+</div>

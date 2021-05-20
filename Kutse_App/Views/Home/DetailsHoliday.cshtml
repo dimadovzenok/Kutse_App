@@ -1,0 +1,34 @@
+﻿@model Kutse_App.Models.Holidays
+
+@{
+    ViewBag.Title = "Pidu Üksikasjad";
+}
+
+<h2>Peo Üksikasjad</h2>
+
+<div>
+    <h4>Peod</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HoliName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoliName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HolidayDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HolidayDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Muuda", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Tagasi nimekirja", "Index")
+</p>
